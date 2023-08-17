@@ -4,6 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Bot's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #222;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            padding: 1em;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #222;
+            color: white;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animated {
+            animation: fadeIn 1.5s;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .invite-btn {
+            display: inline-block;
+            padding: 1em 2em;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            animation: bounce 1.5s infinite;
+        }
+
+        .invite-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,8 +110,11 @@
             <li><a href="/terms-of-service">Terms of Service</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="animated">
         <p>This is the homepage of your bot's website. You can customize this content as needed.</p>
+        <div class="btn-container">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1137052528790491228&permissions=8&scope=applications.commands%20bot" class="invite-btn">Invite Bot to Discord</a>
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 Your Bot. All rights reserved.</p>
