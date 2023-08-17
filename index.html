@@ -113,6 +113,11 @@
             background: url('https://via.placeholder.com/1600x900') repeat;
             animation: moveBackground 30s linear infinite;
         }
+
+        /* Additional styles for privacy and terms sections */
+        .section {
+            margin: 2em;
+        }
     </style>
 </head>
 <body>
@@ -122,8 +127,8 @@
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
         </ul>
     </nav>
     <main class="animated">
@@ -132,6 +137,16 @@
             <a href="https://discord.com/api/oauth2/authorize?client_id=1137052528790491228&permissions=8&scope=applications.commands%20bot" class="invite-btn">Invite Bot to Discord</a>
         </div>
     </main>
+    <!-- Privacy Policy -->
+    <div class="section" id="privacy-policy" style="display: none;">
+        <h2>Privacy Policy</h2>
+        <p>This is the privacy policy of Your Bot's Website. You can customize this content as needed.</p>
+    </div>
+    <!-- Terms of Service -->
+    <div class="section" id="terms-of-service" style="display: none;">
+        <h2>Terms of Service</h2>
+        <p>These are the terms of service of Your Bot's Website. You can customize this content as needed.</p>
+    </div>
     <footer>
         <p>&copy; 2023 Your Bot. All rights reserved.</p>
     </footer>
